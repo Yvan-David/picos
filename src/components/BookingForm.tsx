@@ -44,7 +44,7 @@ export default function BookingForm() {
   return (
     <section id="book" className="py-20 bg-gradient-to-b from-[#fef9fa] to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           {/* Left Side - Info */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -164,7 +164,7 @@ export default function BookingForm() {
               </div>
 
               {/* Date and Time */}
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <Label htmlFor="date" className="text-gray-700 mb-2 block">Preferred Date</Label>
                   <Input

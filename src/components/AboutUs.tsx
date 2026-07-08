@@ -12,7 +12,7 @@ export default function AboutUs() {
   return (
     <section id="about" className="py-20 bg-gradient-to-b from-white to-[#fef9fa]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Image */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -53,7 +53,7 @@ export default function AboutUs() {
             </p>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
               {stats.map((stat, index) => (
                 <motion.div
                   key={stat.label}

@@ -15,8 +15,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <div className="min-h-screen bg-white">
+      <body className="overflow-x-hidden">
+        <div className="min-h-screen bg-white relative overflow-x-hidden">
           <Toaster position="top-right" richColors />
           <NavigationRouter />
           <main>{children}</main>
