@@ -48,7 +48,7 @@ export default function Footer() {
               <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#f7c9d8] to-[#b76e79] flex items-center justify-center">
                 <span className="text-white font-['Playfair_Display']">P</span>
               </div>
-              <h3 className="font-['Playfair_Display'] text-[#b76e79]">Picos Interiors</h3>
+              <h3 className="font-['Playfair_Display'] text-[#b76e79]">Picos Rwanda</h3>
             </div>
             <p className="text-gray-600 text-sm mb-4">
               Transforming homes with elegance, color, and comfort since 2010.
@@ -155,7 +155,7 @@ export default function Footer() {
           className="pt-8 border-t border-[#f7c9d8]/30 text-center"
         >
           <p className="text-gray-600 text-sm">
-            © 2025 Picos Interiors. All rights reserved. Made with{' '}
+            © 2025 Picos Rwanda. All rights reserved. Made with{' '}
             <Heart className="inline text-[#b76e79]" size={14} /> for beautiful homes.
           </p>
         </motion.div>

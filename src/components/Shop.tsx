@@ -13,7 +13,7 @@ export default function Shop() {
       id: 1,
       name: 'Premium Matte Paint',
       category: 'Paint',
-      price: 45.99,
+      price: 45,
       rating: 4.8,
       image: 'https://images.unsplash.com/photo-1567688535100-5dc79f1ca57e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYWludCUyMGNvbG9yJTIwc2FtcGxlc3xlbnwxfHx8fDE3NjA0Mzc1MjN8MA&ixlib=rb-4.1.0&q=80&w=1080',
       description: '1 Gallon - Premium quality',
@@ -22,7 +22,7 @@ export default function Shop() {
       id: 2,
       name: 'Professional Brush Set',
       category: 'Tools',
-      price: 29.99,
+      price: 29,
       rating: 4.9,
       image: 'https://images.unsplash.com/photo-1583031537966-8d186811d75c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYWludCUyMGJydXNoJTIwdG9vbHN8ZW58MXx8fHwxNzYwNTIxMTUwfDA&ixlib=rb-4.1.0&q=80&w=1080',
       description: '5-piece professional set',
@@ -31,7 +31,7 @@ export default function Shop() {
       id: 3,
       name: 'Luxury Wallpaper',
       category: 'Wallpaper',
-      price: 79.99,
+      price: 79,
       rating: 4.7,
       image: 'https://images.unsplash.com/photo-1557411732-1797a9171fcf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3YWxscGFwZXIlMjBwYXR0ZXJuc3xlbnwxfHx8fDE3NjA1MjExNTF8MA&ixlib=rb-4.1.0&q=80&w=1080',
       description: 'Per roll - Designer collection',
@@ -40,7 +40,7 @@ export default function Shop() {
       id: 4,
       name: 'Eggshell Finish Paint',
       category: 'Paint',
-      price: 42.99,
+      price: 42,
       rating: 4.6,
       image: 'https://images.unsplash.com/photo-1567688535100-5dc79f1ca57e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYWludCUyMGNvbG9yJTIwc2FtcGxlc3xlbnwxfHx8fDE3NjA0Mzc1MjN8MA&ixlib=rb-4.1.0&q=80&w=1080',
       description: '1 Gallon - Silky smooth finish',
@@ -49,7 +49,7 @@ export default function Shop() {
       id: 5,
       name: 'Paint Roller Kit',
       category: 'Tools',
-      price: 24.99,
+      price: 24,
       rating: 4.5,
       image: 'https://images.unsplash.com/photo-1583031537966-8d186811d75c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYWludCUyMGJydXNoJTIwdG9vbHN8ZW58MXx8fHwxNzYwNTIxMTUwfDA&ixlib=rb-4.1.0&q=80&w=1080',
       description: 'Complete roller system',
@@ -58,7 +58,7 @@ export default function Shop() {
       id: 6,
       name: 'Textured Wallpaper',
       category: 'Wallpaper',
-      price: 89.99,
+      price: 89,
       rating: 4.8,
       image: 'https://images.unsplash.com/photo-1557411732-1797a9171fcf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3YWxscGFwZXIlMjBwYXR0ZXJuc3xlbnwxfHx8fDE3NjA1MjExNTF8MA&ixlib=rb-4.1.0&q=80&w=1080',
       description: 'Per roll - 3D texture',
@@ -142,15 +142,15 @@ export default function Shop() {
 
                 <div className="flex items-center justify-between">
                   <div>
-                    <span className="text-2xl text-[#b76e79]">${product.price}</span>
+                    <span className="text-2xl text-[#b76e79]">RWF{product.price}K</span>
                   </div>
-                  <Button
+                  {/* <Button
                     onClick={() => addToCart(product.id, product.name)}
                     className="bg-gradient-to-r from-[#b76e79] to-[#e8a0b9] hover:from-[#a65d6a] hover:to-[#d98fa8] text-white rounded-full"
                   >
                     <ShoppingCart size={18} className="mr-2" />
                     Add to Cart
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
             </motion.div>

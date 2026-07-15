@@ -32,25 +32,25 @@ export default function Contact() {
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
+      value: '+250 (785) 123-4567',
       link: 'tel:+15551234567',
     },
     {
       icon: Mail,
       label: 'Email',
-      value: 'hello@picosinteriors.com',
-      link: 'mailto:hello@picosinteriors.com',
+      value: 'hello@picosrwanda.com',
+      link: 'mailto:hello@picosrwanda.com',
     },
     {
       icon: MapPin,
       label: 'Address',
-      value: '123 Design Street, Creative City, CA 90210',
-      link: '#',
+      value: 'Gahanga, Kigali, Rwanda',
+      link: 'https://maps.google.com/?q=Gahanga,Kigali,Rwanda',
     },
     {
       icon: Clock,
       label: 'Business Hours',
-      value: 'Mon - Fri: 9AM - 6PM',
+      value: 'Mon - Fri: 9AM - 8PM',
       link: '#',
     },
   ];
@@ -109,17 +109,38 @@ export default function Contact() {
               </motion.a>
             ))}
 
-            {/* Map Placeholder */}
+            {/* Google Map */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4, duration: 0.8 }}
-              className="rounded-3xl overflow-hidden shadow-lg mt-8 h-64 bg-gradient-to-br from-[#f7c9d8] to-[#b76e79] flex items-center justify-center"
+              className="relative mt-8 rounded-3xl overflow-hidden shadow-xl border-4 border-[#f7c9d8]/40"
             >
-              <div className="text-center text-white">
-                <MapPin size={48} className="mx-auto mb-3 opacity-80" />
-                <p className="opacity-80">Map Location</p>
+              <iframe
+                title="Picos Rwanda Location"
+                src="https://www.google.com/maps?q=Gahanga,Kigali,Rwanda&z=15&output=embed"
+                width="100%"
+                height="320"
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-80"
+              />
+
+              {/* Brand Overlay */}
+              <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md rounded-xl px-4 py-2 shadow-lg border border-[#f7c9d8]/40">
+                <div className="flex items-center gap-2">
+                  <MapPin className="text-[#b76e79]" size={18} />
+                  <div>
+                    <p className="text-sm font-semibold text-gray-900">
+                      Picos Rwanda
+                    </p>
+                    <p className="text-xs text-gray-600">
+                      Gahanga, Kigali
+                    </p>
+                  </div>
+                </div>
               </div>
             </motion.div>
           </motion.div>

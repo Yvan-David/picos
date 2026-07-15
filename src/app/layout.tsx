@@ -4,7 +4,7 @@ import NavigationRouter from '@/components/NavigationRouter';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'Picos Interiors',
+  title: 'Picos Rwanda',
   description: 'Interior Design Studio',
 };
 

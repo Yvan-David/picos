@@ -54,7 +54,7 @@ export default function NavigationRouter() {
                   <span className="text-white font-['Playfair_Display']">P</span>
                 </div>
                 <div>
-                  <h1 className="font-['Playfair_Display'] text-[#b76e79] tracking-tight">Picos Interiors</h1>
+                  <h1 className="font-['Playfair_Display'] text-[#b76e79] tracking-tight">Picos Rwanda</h1>
                 </div>
               </div>
             </motion.div>

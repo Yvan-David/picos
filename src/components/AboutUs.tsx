@@ -1,6 +1,14 @@
 "use client";
-import { motion } from 'motion/react';
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
 import { Award, Heart, Users } from 'lucide-react';
+
+const images = [
+  "/about3.jpeg",
+  "/about1.JPG",
+  "/about2.png",
+  "/about4.png",
+].slice(0, 4); // hard limit to 4 images
 
 export default function AboutUs() {
   const stats = [
@@ -8,6 +16,34 @@ export default function AboutUs() {
     { icon: Users, label: 'Happy Clients', value: '500+' },
     { icon: Heart, label: 'Projects Completed', value: '1000+' },
   ];
+
+  const [imageIndex, setImageIndex] = useState(0);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
+  // Preload all images before animating between them
+  useEffect(() => {
+    let loadedCount = 0;
+    images.forEach((src) => {
+      const img = new window.Image();
+      img.src = src;
+      img.onload = () => {
+        loadedCount++;
+        if (loadedCount === images.length) setImagesLoaded(true);
+      };
+      img.onerror = () => {
+        loadedCount++;
+        if (loadedCount === images.length) setImagesLoaded(true);
+      };
+    });
+  }, []);
+
+  useEffect(() => {
+    if (!imagesLoaded) return;
+    const interval = setInterval(() => {
+      setImageIndex((prev) => (prev + 1) % images.length);
+    }, 1500);
+    return () => clearInterval(interval);
+  }, [imagesLoaded]);
 
   return (
     <section id="about" className="py-20 bg-gradient-to-b from-white to-[#fef9fa]">
@@ -21,13 +57,34 @@ export default function AboutUs() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-              <img
-                src="https://images.unsplash.com/photo-1666876744043-ac474c8026af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbnRlcmlvciUyMGRlc2lnbmVyJTIwd29ya3NwYWNlfGVufDF8fHx8MTc2MDQwODU3M3ww&ixlib=rb-4.1.0&q=80&w=1080"
-                alt="Interior Design Workspace"
-                className="w-full h-[500px] object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#b76e79]/20 to-transparent"></div>
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl h-[500px] bg-black">
+              <AnimatePresence initial={false}>
+                <motion.img
+                  key={images[imageIndex]}
+                  src={images[imageIndex]}
+                  alt="Interior Design Workspace"
+                  className="absolute inset-0 w-full h-full object-cover"
+                  initial={{ x: '100%' }}
+                  animate={{ x: 0 }}
+                  exit={{ x: '-100%' }}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                />
+              </AnimatePresence>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#b76e79]/20 to-transparent pointer-events-none z-10"></div>
+
+              {/* Dots indicator */}
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+                {images.map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setImageIndex(i)}
+                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                      i === imageIndex ? 'bg-white w-6' : 'bg-white/50'
+                    }`}
+                    aria-label={`Show image ${i + 1}`}
+                  />
+                ))}
+              </div>
             </div>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-[#f7c9d8] to-[#b76e79] rounded-full blur-3xl opacity-50"></div>
           </motion.div>
@@ -46,10 +103,10 @@ export default function AboutUs() {
               Crafting Beautiful Spaces Since 2010
             </h2>
             <p className="text-gray-600 mb-4">
-              At Picos Interiors, we believe that your home should be a reflection of your personality and style. Our passion for design and color harmony drives us to create stunning interiors that inspire and delight.
+              At Picos Rwanda, we believe that your home, office or building should be a reflection of your personality,style or proffession. Our passion for design and color harmony drives us to create stunning designs that inspire and delight.
             </p>
             <p className="text-gray-600 mb-8">
-              From modern kitchens to elegant living spaces, we bring creativity, expertise, and attention to detail to every project. Our team of experienced designers works closely with you to transform your vision into reality.
+              From modern kitchens, luxirious offices to elegant living spaces, we bring creativity, expertise, and attention to detail to every project. Our team of experienced designers works closely with you to transform your vision into reality.
             </p>
 
             {/* Stats */}

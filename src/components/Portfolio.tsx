@@ -50,6 +50,13 @@ export default function Portfolio() {
       image: 'https://images.unsplash.com/photo-1758977403403-c51ef509e788?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwZGluaW5nJTIwcm9vbXxlbnwxfHx8fDE3NjA0MzQ1MDd8MA&ixlib=rb-4.1.0&q=80&w=1080',
       description: 'Sophisticated design for entertaining',
     },
+    {
+      id: 7,
+      category: 'Bathrooms',
+      title: 'luxirious Bathroom',
+      image: '/bathroom2.png',
+      description: 'Luxirious design',
+    },
   ];
 
   const filteredProjects =

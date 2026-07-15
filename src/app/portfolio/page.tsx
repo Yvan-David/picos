@@ -8,7 +8,7 @@ import { projects } from '@/data/projects';
 export default function PortfolioPage() {
   const [activeFilter, setActiveFilter] = useState('All');
 
-  const filters = ['All', 'Kitchens', 'Living Rooms', 'Bedrooms', 'Paint Finishes'];
+  const filters = ['All', 'Kitchens', 'Living Rooms', 'Bedrooms', 'Paint Finishes', 'Bathrooms', 'Construction'];
 
   const filteredProjects =
     activeFilter === 'All'

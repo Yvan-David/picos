@@ -40,8 +40,8 @@ export default function ContactPage() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'hello@picosinteriors.com',
-      link: 'mailto:hello@picosinteriors.com',
+      value: 'hello@picosrwanda.com',
+      link: 'mailto:hello@picosrwanda.com',
       description: 'We reply within 24 hours',
     },
     {

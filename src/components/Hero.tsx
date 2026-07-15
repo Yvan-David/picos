@@ -2,6 +2,7 @@
 import { motion } from 'motion/react';
 import { Button } from './ui/button';
 import { ArrowRight, Sparkles } from 'lucide-react';
+import Image from "next/image";
 
 export default function Hero() {
   const scrollToSection = (id: string) => {
@@ -21,9 +22,11 @@ export default function Hero() {
         className="absolute inset-0 z-0"
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50 z-10"></div>
-        <img
-          src="https://images.unsplash.com/photo-1639405069836-f82aa6dcb900?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBtb2Rlcm4lMjBraXRjaGVufGVufDF8fHx8MTc2MDQ2NDcwOHww&ixlib=rb-4.1.0&q=80&w=1080"
+        <Image
+          src="/hero2.png"
           alt="Luxury Interior"
+          width={1080}
+          height={720}
           className="w-full h-full object-cover"
         />
       </motion.div>
@@ -36,7 +39,7 @@ export default function Hero() {
           transition={{ delay: 0.3, duration: 0.8 }}
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-md rounded-full mb-6 border border-white/30">
-            <Sparkles className="text-[#f7c9d8]" size={20} />
+            {/* <Sparkles className="text-[#f7c9d8]" size={20} /> */}
             <span className="text-white">Premium Interior Design Services</span>
           </div>
         </motion.div>
@@ -58,7 +61,7 @@ export default function Hero() {
           transition={{ delay: 0.7, duration: 0.8 }}
           className="text-white/90 text-xl max-w-3xl mx-auto mb-10"
         >
-          We design, paint, and perfect every corner of your home with attention to detail and a passion for beauty.
+          We design, Construct, paint, and perfect every corner of your home with attention to detail and a passion for beauty.
         </motion.p>
 
         <motion.div
@@ -86,7 +89,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Scroll Indicator */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.8 }}
@@ -99,7 +102,7 @@ export default function Hero() {
           >
             <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
           </motion.div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );

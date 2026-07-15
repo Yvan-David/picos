@@ -13,7 +13,7 @@ export default function Testimonials() {
       role: 'Homeowner',
       image: 'https://images.unsplash.com/photo-1581065178047-8ee15951ede6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3b21hbiUyMHBvcnRyYWl0fGVufDF8fHx8MTc2MDUxODc0OHww&ixlib=rb-4.1.0&q=80&w=1080',
       rating: 5,
-      text: 'Picos Interiors transformed our kitchen into a stunning modern space. The attention to detail and professional service exceeded all our expectations. Highly recommended!',
+      text: 'Picos Rwanda transformed our kitchen into a stunning modern space. The attention to detail and professional service exceeded all our expectations. Highly recommended!',
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ export default function Testimonials() {
       role: 'Interior Designer',
       image: 'https://images.unsplash.com/photo-1581065178047-8ee15951ede6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3b21hbiUyMHBvcnRyYWl0fGVufDF8fHx8MTc2MDUxODc0OHww&ixlib=rb-4.1.0&q=80&w=1080',
       rating: 5,
-      text: 'As a fellow designer, I appreciate quality work when I see it. Picos Interiors delivered exceptional results for my home renovation. The color choices were perfect!',
+      text: 'As a fellow designer, I appreciate quality work when I see it. Picos Rwanda delivered exceptional results for my home renovation. The color choices were perfect!',
     },
   ];
 

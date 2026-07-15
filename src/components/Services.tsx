@@ -7,22 +7,22 @@ export default function Services() {
   const services = [
     {
       icon: ChefHat,
-      title: 'Kitchen Design',
-      description: 'Transform your kitchen into a culinary masterpiece with our custom design solutions. From modern minimalist to classic elegance.',
+      title: 'Kitchen and Home Interior Design',
+      description: 'Transform your kitchen  and Home Interiors into a masterpiece with our custom design solutions. From modern minimalist to classic elegance.',
       image: 'https://images.unsplash.com/photo-1682888813795-192fca4a10d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBraXRjaGVuJTIwZGVzaWdufGVufDF8fHx8MTc2MDQ0NDU5M3ww&ixlib=rb-4.1.0&q=80&w=1080',
       color: 'from-[#f7c9d8] to-[#e8a0b9]',
     },
     {
       icon: Paintbrush,
-      title: 'Interior Painting',
+      title: 'Painting Works',
       description: 'Professional painting services with premium finishes. We bring color and life to every room with precision and care.',
       image: 'https://images.unsplash.com/photo-1666179861891-db5155e290c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbnRlcmlvciUyMGhvdXNlJTIwcGFpbnRpbmd8ZW58MXx8fHwxNzYwNTIxMTQ5fDA&ixlib=rb-4.1.0&q=80&w=1080',
       color: 'from-[#e8a0b9] to-[#b76e79]',
     },
     {
       icon: Home,
-      title: 'Home Interior Design',
-      description: 'Complete interior design services for every space in your home. Creating harmonious and functional living environments.',
+      title: 'Construction works',
+      description: 'Complete construction services for every space in your home. Creating harmonious and functional living environments.',
       image: 'https://images.unsplash.com/photo-1638885930125-85350348d266?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBsaXZpbmclMjByb29tfGVufDF8fHx8MTc2MDUyMTE0OXww&ixlib=rb-4.1.0&q=80&w=1080',
       color: 'from-[#b76e79] to-[#a65d6a]',
     },
@@ -53,7 +53,7 @@ export default function Services() {
               What We Offer
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Comprehensive interior design solutions tailored to your unique style and needs
+              Comprehensive Contruction and interior design solutions tailored to your unique style and needs
             </p>
           </motion.div>
         </div>

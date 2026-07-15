@@ -1,4 +1,4 @@
-# Picos Interiors
+# Picos Rwanda
 
 A modern, elegant, and responsive website built for an interior design firm, designed by **thetechers**.
 

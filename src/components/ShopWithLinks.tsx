@@ -92,15 +92,15 @@ export default function ShopWithLinks() {
 
                   <div className="flex items-center justify-between">
                     <div>
-                      <span className="text-2xl text-[#b76e79]">${product.price}</span>
+                      <span className="text-2xl text-[#b76e79]">{product.price}K RWF</span>
                     </div>
-                    <Button
+                    {/* <Button
                       onClick={(e) => addToCart(product.id, product.name, e)}
                       className="bg-gradient-to-r from-[#b76e79] to-[#e8a0b9] hover:from-[#a65d6a] hover:to-[#d98fa8] text-white rounded-full"
                     >
                       <ShoppingCart size={18} className="mr-2" />
                       Add to Cart
-                    </Button>
+                    </Button> */}
                   </div>
                 </div>
               </motion.div>

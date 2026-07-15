@@ -23,7 +23,7 @@ export const products: Product[] = [
     slug: 'premium-matte-paint',
     name: 'Premium Matte Paint',
     category: 'Paint',
-    price: 45.99,
+    price: 45,
     rating: 4.8,
     image: 'https://images.unsplash.com/photo-1567688535100-5dc79f1ca57e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYWludCUyMGNvbG9yJTIwc2FtcGxlc3xlbnwxfHx8fDE3NjA0Mzc1MjN8MA&ixlib=rb-4.1.0&q=80&w=1080',
     images: [
@@ -57,7 +57,7 @@ export const products: Product[] = [
     slug: 'professional-brush-set',
     name: 'Professional Brush Set',
     category: 'Tools',
-    price: 29.99,
+    price: 29,
     rating: 4.9,
     image: 'https://images.unsplash.com/photo-1583031537966-8d186811d75c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYWludCUyMGJydXNoJTIwdG9vbHN8ZW58MXx8fHwxNzYwNTIxMTUwfDA&ixlib=rb-4.1.0&q=80&w=1080',
     images: [
@@ -90,7 +90,7 @@ export const products: Product[] = [
     slug: 'luxury-wallpaper-geometric',
     name: 'Luxury Geometric Wallpaper',
     category: 'Wallpaper',
-    price: 79.99,
+    price: 79,
     rating: 4.7,
     image: 'https://images.unsplash.com/photo-1557411732-1797a9171fcf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3YWxscGFwZXIlMjBwYXR0ZXJuc3xlbnwxfHx8fDE3NjA1MjExNTF8MA&ixlib=rb-4.1.0&q=80&w=1080',
     images: [
@@ -124,7 +124,7 @@ export const products: Product[] = [
     slug: 'eggshell-finish-paint',
     name: 'Eggshell Finish Paint',
     category: 'Paint',
-    price: 42.99,
+    price: 42,
     rating: 4.6,
     image: 'https://images.unsplash.com/photo-1567688535100-5dc79f1ca57e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYWludCUyMGNvbG9yJTIwc2FtcGxlc3xlbnwxfHx8fDE3NjA0Mzc1MjN8MA&ixlib=rb-4.1.0&q=80&w=1080',
     images: [
@@ -158,7 +158,7 @@ export const products: Product[] = [
     slug: 'paint-roller-kit',
     name: 'Premium Paint Roller Kit',
     category: 'Tools',
-    price: 24.99,
+    price: 24,
     rating: 4.5,
     image: 'https://images.unsplash.com/photo-1583031537966-8d186811d75c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYWludCUyMGJydXNoJTIwdG9vbHN8ZW58MXx8fHwxNzYwNTIxMTUwfDA&ixlib=rb-4.1.0&q=80&w=1080',
     images: [
@@ -192,7 +192,7 @@ export const products: Product[] = [
     slug: 'textured-wallpaper-damask',
     name: 'Textured Damask Wallpaper',
     category: 'Wallpaper',
-    price: 89.99,
+    price: 89,
     rating: 4.8,
     image: 'https://images.unsplash.com/photo-1557411732-1797a9171fcf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3YWxscGFwZXIlMjBwYXR0ZXJuc3xlbnwxfHx8fDE3NjA1MjExNTF8MA&ixlib=rb-4.1.0&q=80&w=1080',
     images: [

@@ -8,27 +8,27 @@ import { Button } from './ui/button';
 export default function ServicesWithLinks() {
   const services = [
     {
-      slug: 'kitchen-design',
+      slug: 'Interior-design',
       icon: ChefHat,
-      title: 'Kitchen Design',
-      description: 'Transform your kitchen into a culinary masterpiece with our custom design solutions. From modern minimalist to classic elegance.',
-      image: 'https://images.unsplash.com/photo-1682888813795-192fca4a10d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBraXRjaGVuJTIwZGVzaWdufGVufDF8fHx8MTc2MDQ0NDU5M3ww&ixlib=rb-4.1.0&q=80&w=1080',
+      title: 'Kitchen and Home Interior Design',
+      description: 'Transform your kitchen and home Interiors into a masterpiece with our custom design solutions. From modern minimalist to classic elegance.',
+      image: '/kitchenservice.png',
       color: 'from-[#f7c9d8] to-[#e8a0b9]',
     },
     {
-      slug: 'interior-painting',
+      slug: 'painting',
       icon: Paintbrush,
-      title: 'Interior Painting',
+      title: 'Painting-works',
       description: 'Professional painting services with premium finishes. We bring color and life to every room with precision and care.',
-      image: 'https://images.unsplash.com/photo-1666179861891-db5155e290c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbnRlcmlvciUyMGhvdXNlJTIwcGFpbnRpbmd8ZW58MXx8fHwxNzYwNTIxMTQ5fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: '/paintingservice.png',
       color: 'from-[#e8a0b9] to-[#b76e79]',
     },
     {
-      slug: 'home-interior-design',
+      slug: 'building-works',
       icon: Home,
-      title: 'Home Interior Design',
-      description: 'Complete interior design services for every space in your home. Creating harmonious and functional living environments.',
-      image: 'https://images.unsplash.com/photo-1638885930125-85350348d266?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBsaXZpbmclMjByb29tfGVufDF8fHx8MTc2MDUyMTE0OXww&ixlib=rb-4.1.0&q=80&w=1080',
+      title: 'Construction works',
+      description: 'Complete construction services for every space in your home. Creating harmonious and functional living environments.',
+      image: "/buildingservice1.png",
       color: 'from-[#b76e79] to-[#a65d6a]',
     },
     {
@@ -36,7 +36,7 @@ export default function ServicesWithLinks() {
       icon: ShoppingBag,
       title: 'Paints & Materials Store',
       description: 'Shop premium paints, brushes, wallpapers, and materials. Everything you need for your DIY projects or professional work.',
-      image: 'https://images.unsplash.com/photo-1567688535100-5dc79f1ca57e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYWludCUyMGNvbG9yJTIwc2FtcGxlc3xlbnwxfHx8fDE3NjA0Mzc1MjN8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: '/paintservice.jpg',
       color: 'from-[#a65d6a] to-[#b76e79]',
     },
   ];
